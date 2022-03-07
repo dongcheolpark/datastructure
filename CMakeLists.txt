@@ -1,12 +1,9 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(DataStructure VERSION 0.1.0)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.15.0)
 
-include(CTest)
-enable_testing()
+SET(proj_name "DataStructure")
+PROJECT(${proj_name} )
 
-add_executable(DataStructure src/main.cpp
-							 )
+# C++ settings
+SET(CMAKE_CXX_STANDARD 11)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+add_subdirectory(src)

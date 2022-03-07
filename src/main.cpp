@@ -1,6 +1,8 @@
 #include <iostream>
+#include "Class.hpp"
 
 int main() {
-    std::cout << "Hello, world!\n";
+    auto _Class = ClassFactory::get(1);
+    _Class->run();
     return 0;
 }

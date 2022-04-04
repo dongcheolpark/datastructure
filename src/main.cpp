@@ -8,13 +8,18 @@
 using namespace std;
 
 int main(void) {
-    Polynomial p;
+    Polynomial p1, p2, p3;
     
-    string filename;
-    getline(cin, filename);
-
-    p.LoadPolynomial(filename);
-    p.PrintPolynomial();
+    string file1, file2;
+    getline(cin, file1);
+    
+    p1.LoadPolynomial(file1);
+    
+    getline(cin, file2);
+    p2.LoadPolynomial(file2);
+    
+    p3.add(p1, p2);
+    p3.PrintPolynomial();
     
     return 0;
 }

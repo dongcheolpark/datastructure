@@ -1,14 +1,14 @@
 #pragma once
 #include <string>
+#include <vector>
 #include <utility>
 
 class Polynomial
 {
 private:
 	int n;
-	std::pair<int,int> * arr;
+	std::vector<std::pair<int,int> > arr;
 public:
-	Polynomial();
 	void LoadPolynomial(std::string);
 	void PrintPolynomial();
 };

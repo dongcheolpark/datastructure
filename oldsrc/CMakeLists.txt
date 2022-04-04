@@ -8,7 +8,8 @@ enable_testing()
 
 SET (SRC_FILES
 	main.cpp
-	polynomial.cpp
+	Class.cpp
+	Classes/Class1.cpp
     )
 
 ADD_EXECUTABLE(${BINARY}  ${SRC_FILES})

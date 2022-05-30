@@ -8,7 +8,7 @@ enable_testing()
 
 SET (SRC_FILES
 	main.cpp
-	list.cpp
+	graph.cpp
     )
 
 ADD_EXECUTABLE(${BINARY}  ${SRC_FILES})
